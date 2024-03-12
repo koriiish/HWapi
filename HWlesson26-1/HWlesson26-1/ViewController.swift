@@ -22,26 +22,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupTableView()
         getUsers()
+        setupTableView()
         
-//        let dataTask = sharedSession.dataTask(with: URLRequest(url: url), completionHandler: { data,_,_ in
-//            do {
-//                if let data = data {
-//                    let json = try JSONSerialization.jsonObject(with: data)
-//                    print(json)
-//                } else {
-//                    print("error")
-//                }
-//            }catch {
-//                print(error)
-//            }
-//        }
-//        )
-//        
-//        dataTask.resume()
-//        
+        let dataTask = sharedSession.dataTask(with: URLRequest(url: url), completionHandler: { data,_,_ in
+            do {
+                if let data = data {
+                    let json = try JSONSerialization.jsonObject(with: data)
+                    print(json)
+                } else {
+                    print("error")
+                }
+            }catch {
+                print(error)
+            }
+        }
+        )
+        
+        dataTask.resume()
     }
     private func setupTableView() {
         view.addSubview(tableView)
@@ -105,7 +103,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 300
     }
 }
 
