@@ -1,0 +1,6 @@
+framework module Pods_HWlesson26_HWlesson26UITests {
+  umbrella header "Pods-HWlesson26-HWlesson26UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -23,24 +24,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupTableView()
-        getRequest()
+        getUsers()
         
-        let dataTask = sharedSession.dataTask(with: URLRequest(url: url), completionHandler: { data,_,_ in
-            do {
-                if let data = data {
-                    let json = try JSONSerialization.jsonObject(with: data)
-                    print(json)
-                } else {
-                    print("error")
-                }
-            }catch {
-                print(error)
-            }
-        }
-        )
-        
-        dataTask.resume()
-        
+//        let dataTask = sharedSession.dataTask(with: URLRequest(url: url), completionHandler: { data,_,_ in
+//            do {
+//                if let data = data {
+//                    let json = try JSONSerialization.jsonObject(with: data)
+//                    print(json)
+//                } else {
+//                    print("error")
+//                }
+//            }catch {
+//                print(error)
+//            }
+//        }
+//        )
+//        
+//        dataTask.resume()
+//        
     }
     private func setupTableView() {
         view.addSubview(tableView)
@@ -57,22 +58,38 @@ class ViewController: UIViewController {
         tableView.register(UsersTableViewCell.self, forCellReuseIdentifier: "UsersTableViewCell")
         tableView.reloadData()
     }
-    func getRequest() {
-        NetworkManager.performGetRequest(url: url) { result in
-            switch result {
-            case .success(let users):
-                
-//                for user in self.users {
-//                    self.users.append(user)
+    
+    private func getUsers() {
+         AF.request(url).responseDecodable(of: Users.self) { response in
+             switch response.result {
+             case .success(let users):
+                 for user in self.users {
+                     self.users.append(user)
+                     DispatchQueue.main.async {
+                         self.tableView.reloadData()
+                     }
+                 }
+             case .failure(let error):
+                 print("Error: \(error.localizedDescription)")
+             }
+         }
+     }
+//    func getRequest() {
+//        NetworkManager.performGetRequest(url: url) { result in
+//            switch result {
+//            case .success(let users):
+//                
+////                for user in self.users {
+////                    self.users.append(user)
+////                }
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
 //                }
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            case .failure(let error):
-                print("Error: \(error.localizedDescription)")
-            }
-        }
-    }
+//            case .failure(let error):
+//                print("Error: \(error.localizedDescription)")
+//            }
+//        }
+//    }
     
 }
 

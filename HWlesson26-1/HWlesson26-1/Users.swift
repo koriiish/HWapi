@@ -14,6 +14,3 @@ struct Users: Codable {
     var adress: String
 }
 
-//struct JSONData: Decodable {
-//     let users: [Users]
-// }

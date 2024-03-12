@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421AEA96C26EB78C2B469E43 /* Pods_HWlesson26Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463223F2482542E2B609B761 /* Pods_HWlesson26Tests.framework */; };
 		A76A936D2BA0703A00D4F774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A936C2BA0703A00D4F774 /* AppDelegate.swift */; };
 		A76A936F2BA0703A00D4F774 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A936E2BA0703A00D4F774 /* SceneDelegate.swift */; };
 		A76A93712BA0703A00D4F774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A93702BA0703A00D4F774 /* ViewController.swift */; };
@@ -19,6 +20,8 @@
 		A76A939F2BA0708300D4F774 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A939E2BA0708300D4F774 /* Users.swift */; };
 		A76A93A12BA070D200D4F774 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A93A02BA070D200D4F774 /* NetworkManager.swift */; };
 		A76A93A52BA0809A00D4F774 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A93A42BA0809A00D4F774 /* UsersTableViewCell.swift */; };
+		BA4F3EEA5BA7B32CAE0B6289 /* Pods_HWlesson26.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F060DE1B070D70588C3F0CA /* Pods_HWlesson26.framework */; };
+		E9AB9DE7DA9182F3A2C309FD /* Pods_HWlesson26_HWlesson26UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B3572877FA51EF73F82499 /* Pods_HWlesson26_HWlesson26UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060AB2A9DC54A7A058151BA2 /* Pods-HWlesson26-HWlesson26UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWlesson26-HWlesson26UITests.debug.xcconfig"; path = "Target Support Files/Pods-HWlesson26-HWlesson26UITests/Pods-HWlesson26-HWlesson26UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		463223F2482542E2B609B761 /* Pods_HWlesson26Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWlesson26Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F060DE1B070D70588C3F0CA /* Pods_HWlesson26.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWlesson26.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B3572877FA51EF73F82499 /* Pods_HWlesson26_HWlesson26UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWlesson26_HWlesson26UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C9B2F4C8397EE0D5AE8E5A /* Pods-HWlesson26-HWlesson26UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWlesson26-HWlesson26UITests.release.xcconfig"; path = "Target Support Files/Pods-HWlesson26-HWlesson26UITests/Pods-HWlesson26-HWlesson26UITests.release.xcconfig"; sourceTree = "<group>"; };
+		776F42A6BE3E4E9FADBD3765 /* Pods-HWlesson26Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWlesson26Tests.debug.xcconfig"; path = "Target Support Files/Pods-HWlesson26Tests/Pods-HWlesson26Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		78495E7B4F7B7A353865B041 /* Pods-HWlesson26Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWlesson26Tests.release.xcconfig"; path = "Target Support Files/Pods-HWlesson26Tests/Pods-HWlesson26Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8219DDB5AB8CDC99DBCF9582 /* Pods-HWlesson26.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWlesson26.debug.xcconfig"; path = "Target Support Files/Pods-HWlesson26/Pods-HWlesson26.debug.xcconfig"; sourceTree = "<group>"; };
 		A76A93692BA0703A00D4F774 /* HWlesson26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWlesson26.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76A936C2BA0703A00D4F774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A76A936E2BA0703A00D4F774 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +66,7 @@
 		A76A939E2BA0708300D4F774 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		A76A93A02BA070D200D4F774 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A76A93A42BA0809A00D4F774 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		BAAE06A58C9764D4484915CE /* Pods-HWlesson26.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWlesson26.release.xcconfig"; path = "Target Support Files/Pods-HWlesson26/Pods-HWlesson26.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4F3EEA5BA7B32CAE0B6289 /* Pods_HWlesson26.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421AEA96C26EB78C2B469E43 /* Pods_HWlesson26Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AB9DE7DA9182F3A2C309FD /* Pods_HWlesson26_HWlesson26UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC455102233B522D9DF7443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F060DE1B070D70588C3F0CA /* Pods_HWlesson26.framework */,
+				67B3572877FA51EF73F82499 /* Pods_HWlesson26_HWlesson26UITests.framework */,
+				463223F2482542E2B609B761 /* Pods_HWlesson26Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60356D99763FFCD54C96F893 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8219DDB5AB8CDC99DBCF9582 /* Pods-HWlesson26.debug.xcconfig */,
+				BAAE06A58C9764D4484915CE /* Pods-HWlesson26.release.xcconfig */,
+				060AB2A9DC54A7A058151BA2 /* Pods-HWlesson26-HWlesson26UITests.debug.xcconfig */,
+				74C9B2F4C8397EE0D5AE8E5A /* Pods-HWlesson26-HWlesson26UITests.release.xcconfig */,
+				776F42A6BE3E4E9FADBD3765 /* Pods-HWlesson26Tests.debug.xcconfig */,
+				78495E7B4F7B7A353865B041 /* Pods-HWlesson26Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A76A93602BA0703A00D4F774 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +127,8 @@
 				A76A93822BA0703B00D4F774 /* HWlesson26-1Tests */,
 				A76A938C2BA0703B00D4F774 /* HWlesson26-1UITests */,
 				A76A936A2BA0703A00D4F774 /* Products */,
+				60356D99763FFCD54C96F893 /* Pods */,
+				0AC455102233B522D9DF7443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A76A93932BA0703B00D4F774 /* Build configuration list for PBXNativeTarget "HWlesson26" */;
 			buildPhases = (
+				D1B66319AA2F6D94046128F1 /* [CP] Check Pods Manifest.lock */,
 				A76A93652BA0703A00D4F774 /* Sources */,
 				A76A93662BA0703A00D4F774 /* Frameworks */,
 				A76A93672BA0703A00D4F774 /* Resources */,
+				10D4B35FC557E2FB1BB0AFE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A76A93962BA0703B00D4F774 /* Build configuration list for PBXNativeTarget "HWlesson26Tests" */;
 			buildPhases = (
+				59501EDD3EA8E0F3AD378770 /* [CP] Check Pods Manifest.lock */,
 				A76A937B2BA0703B00D4F774 /* Sources */,
 				A76A937C2BA0703B00D4F774 /* Frameworks */,
 				A76A937D2BA0703B00D4F774 /* Resources */,
@@ -178,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A76A93992BA0703B00D4F774 /* Build configuration list for PBXNativeTarget "HWlesson26UITests" */;
 			buildPhases = (
+				E41E95C1D5CB5B2EEDD6A16B /* [CP] Check Pods Manifest.lock */,
 				A76A93852BA0703B00D4F774 /* Sources */,
 				A76A93862BA0703B00D4F774 /* Frameworks */,
 				A76A93872BA0703B00D4F774 /* Resources */,
+				D0D6858ED3ABCB0D38FF09BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +306,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10D4B35FC557E2FB1BB0AFE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HWlesson26/Pods-HWlesson26-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HWlesson26/Pods-HWlesson26-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HWlesson26/Pods-HWlesson26-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59501EDD3EA8E0F3AD378770 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HWlesson26Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D6858ED3ABCB0D38FF09BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HWlesson26-HWlesson26UITests/Pods-HWlesson26-HWlesson26UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HWlesson26-HWlesson26UITests/Pods-HWlesson26-HWlesson26UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HWlesson26-HWlesson26UITests/Pods-HWlesson26-HWlesson26UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B66319AA2F6D94046128F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HWlesson26-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E41E95C1D5CB5B2EEDD6A16B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HWlesson26-HWlesson26UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A76A93652BA0703A00D4F774 /* Sources */ = {
@@ -365,7 +513,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -428,7 +576,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -449,6 +597,7 @@
 		};
 		A76A93942BA0703B00D4F774 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8219DDB5AB8CDC99DBCF9582 /* Pods-HWlesson26.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +625,7 @@
 		};
 		A76A93952BA0703B00D4F774 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAAE06A58C9764D4484915CE /* Pods-HWlesson26.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -503,6 +653,7 @@
 		};
 		A76A93972BA0703B00D4F774 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776F42A6BE3E4E9FADBD3765 /* Pods-HWlesson26Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +673,7 @@
 		};
 		A76A93982BA0703B00D4F774 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78495E7B4F7B7A353865B041 /* Pods-HWlesson26Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -541,6 +693,7 @@
 		};
 		A76A939A2BA0703B00D4F774 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060AB2A9DC54A7A058151BA2 /* Pods-HWlesson26-HWlesson26UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +711,7 @@
 		};
 		A76A939B2BA0703B00D4F774 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C9B2F4C8397EE0D5AE8E5A /* Pods-HWlesson26-HWlesson26UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
