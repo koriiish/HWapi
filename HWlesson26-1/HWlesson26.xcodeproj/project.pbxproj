@@ -16,10 +16,9 @@
 		A76A93842BA0703B00D4F774 /* HWlesson26_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A93832BA0703B00D4F774 /* HWlesson26_1Tests.swift */; };
 		A76A938E2BA0703B00D4F774 /* HWlesson26_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A938D2BA0703B00D4F774 /* HWlesson26_1UITests.swift */; };
 		A76A93902BA0703B00D4F774 /* HWlesson26_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A938F2BA0703B00D4F774 /* HWlesson26_1UITestsLaunchTests.swift */; };
-		A76A939D2BA0705B00D4F774 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A939C2BA0705B00D4F774 /* UsersTableViewCell.swift */; };
 		A76A939F2BA0708300D4F774 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A939E2BA0708300D4F774 /* Users.swift */; };
 		A76A93A12BA070D200D4F774 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A93A02BA070D200D4F774 /* NetworkManager.swift */; };
-		A76A93A32BA070F700D4F774 /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A93A22BA070F700D4F774 /* JSONParse.swift */; };
+		A76A93A52BA0809A00D4F774 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A93A42BA0809A00D4F774 /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +52,9 @@
 		A76A93892BA0703B00D4F774 /* HWlesson26UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWlesson26UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76A938D2BA0703B00D4F774 /* HWlesson26_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWlesson26_1UITests.swift; sourceTree = "<group>"; };
 		A76A938F2BA0703B00D4F774 /* HWlesson26_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWlesson26_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A76A939C2BA0705B00D4F774 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		A76A939E2BA0708300D4F774 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		A76A93A02BA070D200D4F774 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		A76A93A22BA070F700D4F774 /* JSONParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
+		A76A93A42BA0809A00D4F774 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +108,8 @@
 				A76A936C2BA0703A00D4F774 /* AppDelegate.swift */,
 				A76A936E2BA0703A00D4F774 /* SceneDelegate.swift */,
 				A76A93702BA0703A00D4F774 /* ViewController.swift */,
-				A76A939C2BA0705B00D4F774 /* UsersTableViewCell.swift */,
+				A76A93A42BA0809A00D4F774 /* UsersTableViewCell.swift */,
 				A76A93A02BA070D200D4F774 /* NetworkManager.swift */,
-				A76A93A22BA070F700D4F774 /* JSONParse.swift */,
 				A76A939E2BA0708300D4F774 /* Users.swift */,
 				A76A93722BA0703A00D4F774 /* Main.storyboard */,
 				A76A93752BA0703B00D4F774 /* Assets.xcassets */,
@@ -271,9 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76A93A12BA070D200D4F774 /* NetworkManager.swift in Sources */,
-				A76A939D2BA0705B00D4F774 /* UsersTableViewCell.swift in Sources */,
-				A76A93A32BA070F700D4F774 /* JSONParse.swift in Sources */,
 				A76A93712BA0703A00D4F774 /* ViewController.swift in Sources */,
+				A76A93A52BA0809A00D4F774 /* UsersTableViewCell.swift in Sources */,
 				A76A939F2BA0708300D4F774 /* Users.swift in Sources */,
 				A76A936D2BA0703A00D4F774 /* AppDelegate.swift in Sources */,
 				A76A936F2BA0703A00D4F774 /* SceneDelegate.swift in Sources */,

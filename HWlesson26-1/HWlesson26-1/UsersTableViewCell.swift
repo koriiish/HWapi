@@ -1,13 +1,11 @@
 //
 //  UsersTableViewCell.swift
-//  HWlesson26-1
+//  HWlesson26
 //
 //  Created by Карина Дьячина on 12.03.24.
 //
 
-import Foundation
 import UIKit
-
 class UsersTableViewCell: UITableViewCell {
     
     lazy var nameLabel: UILabel = {
@@ -36,14 +34,14 @@ class UsersTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupLabel()
+        setupLabels()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
-    private func setupLabel() {
+    private func setupLabels() {
         addSubview(nameLabel)
         addSubview(usernameLabel)
         addSubview(emailLabel)
@@ -52,22 +50,27 @@ class UsersTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 15),
             nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             
             usernameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             usernameLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 15),
+            usernameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             
             emailLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             emailLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
+            emailLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             
             adressLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            adressLabel.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 10)
+            adressLabel.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 10),
+            adressLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
         ])
     }
     
     func configure(users: Users) {
-        nameLabel.text = users.name
-        usernameLabel.text = users.username
-        emailLabel.text = users.email
-        adressLabel.text = users.adress
+        nameLabel.text = "\(users.name)"
+        usernameLabel.text = "\(users.username)"
+        emailLabel.text = "\(users.email)"
+        adressLabel.text = "\(users.adress)"
     }
 }
+

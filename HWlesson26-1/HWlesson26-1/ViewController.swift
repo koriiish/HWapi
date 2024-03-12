@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
         let sharedSession = URLSession.shared
         let url = URL(string: "https://jsonplaceholder.typicode.com/users")!
-        var users = [Users]()
+        var users: [Users] = []
         
         let tableView: UITableView = {
             let tableView = UITableView()
@@ -36,14 +36,6 @@ class ViewController: UIViewController {
                 }catch {
                     print(error)
                             }
-    //            if let safeData = data {
-    //                self.parseJson(usersData: safeData)
-    //
-    //                DispatchQueue.main.async {
-    //                    // обновляем таблицу после получения данных в основном потоке
-    //                    self.tableView.reloadData()
-    //                }
-    //            }
             }
             )
 
@@ -69,9 +61,6 @@ class ViewController: UIViewController {
             switch result {
             case .success(let users):
                 self.users = users
-                //  for user in users {
-                //     self.users.append(user)
-                //  }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -82,17 +71,17 @@ class ViewController: UIViewController {
     }
 
     
-    //    func parseJson(usersData: Data) {
-    //            let decoder = JSONDecoder()
-    //            do {
-    //                let decodedData = try decoder.decode(JSONData.self, from: usersData)
-    //                // получаем данные
-    //                users = decodedData.users
-    //                print(decodedData.users[0].name)
-    //            } catch {
-    //                print(error)
-    //            }
-    //        }
+//        func parseJson(usersData: Data) {
+//                let decoder = JSONDecoder()
+//                do {
+//                    let decodedData = try decoder.decode(JSONData.self, from: usersData)
+//                    // получаем данные
+//                    users = decodedData.users
+//                    print(decodedData.users[0].name)
+//                } catch {
+//                    print(error)
+//                }
+//            }
        
     }
 
