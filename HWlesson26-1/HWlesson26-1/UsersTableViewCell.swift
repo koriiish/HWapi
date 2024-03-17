@@ -14,7 +14,7 @@ class UsersTableViewCell: UITableViewCell {
         return titleLabel
     }()
     
-    lazy var usernameLabel: UILabel = {
+    lazy var userNameLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         return titleLabel
@@ -26,9 +26,10 @@ class UsersTableViewCell: UITableViewCell {
         return titleLabel
     }()
     
-    lazy var adressLabel: UILabel = {
+    lazy var addressLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.numberOfLines = 2
         return titleLabel
     }()
     
@@ -43,34 +44,34 @@ class UsersTableViewCell: UITableViewCell {
     
     private func setupLabels() {
         addSubview(nameLabel)
-        addSubview(usernameLabel)
+        addSubview(userNameLabel)
         addSubview(emailLabel)
-        addSubview(adressLabel)
+        addSubview(addressLabel)
         
         NSLayoutConstraint.activate([
             nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 15),
             nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             
-            usernameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            usernameLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 15),
-            usernameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            userNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            userNameLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 15),
+            userNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             
             emailLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            emailLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
+            emailLabel.topAnchor.constraint(equalTo: userNameLabel.bottomAnchor, constant: 10),
             emailLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             
-            adressLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
-            adressLabel.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 10),
-            adressLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
+            addressLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            addressLabel.topAnchor.constraint(equalTo: emailLabel.bottomAnchor, constant: 10),
+            addressLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10)
         ])
     }
     
     func configure(users: Users) {
-        nameLabel.text = "\(users.name)"
-        usernameLabel.text = "\(users.username)"
-        emailLabel.text = "\(users.email)"
-        adressLabel.text = "\(users.adress)"
+        nameLabel.text = "Name: \(users.name)"
+        userNameLabel.text = "UserName: \(users.username)"
+        emailLabel.text = "Email: \(users.email)"
+        addressLabel.text = "Adress: \(users.address)"
     }
 }
 

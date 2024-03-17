@@ -22,25 +22,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        makeDataTask()
         getUsers()
+      //  getRequest()
         setupTableView()
-        
-        let dataTask = sharedSession.dataTask(with: URLRequest(url: url), completionHandler: { data,_,_ in
-            do {
-                if let data = data {
-                    let json = try JSONSerialization.jsonObject(with: data)
-                    print(json)
-                } else {
-                    print("error")
-                }
-            }catch {
-                print(error)
-            }
-        }
-        )
-        
-        dataTask.resume()
     }
+    
     private func setupTableView() {
         view.addSubview(tableView)
         
@@ -58,37 +45,53 @@ class ViewController: UIViewController {
     }
     
     private func getUsers() {
-         AF.request(url).responseDecodable(of: Users.self) { response in
+         AF.request(url).responseDecodable(of: [Users].self) { response in
              switch response.result {
              case .success(let users):
-                 for user in self.users {
-                     self.users.append(user)
+                 self.users = users
                      DispatchQueue.main.async {
                          self.tableView.reloadData()
                      }
-                 }
              case .failure(let error):
                  print("Error: \(error.localizedDescription)")
              }
          }
      }
-//    func getRequest() {
-//        NetworkManager.performGetRequest(url: url) { result in
-//            switch result {
-//            case .success(let users):
-//                
-////                for user in self.users {
-////                    self.users.append(user)
-////                }
-//                DispatchQueue.main.async {
-//                    self.tableView.reloadData()
-//                }
-//            case .failure(let error):
-//                print("Error: \(error.localizedDescription)")
-//            }
-//        }
-//    }
+    func getRequest() {
+        NetworkManager.performGetRequest(url: url) { [weak self] result in
+            switch result {
+            case .success(let users):
+                self?.users = users
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
     
+    func makeDataTask() {
+        let dataTask = sharedSession.dataTask(with: URLRequest(url: url), completionHandler: { [weak self] data,_,_ in
+            do {
+                if let data = data {
+                    let json = try JSONSerialization.jsonObject(with: data)
+                    print(json)
+                    
+                    self?.users = try JSONDecoder().decode([Users].self, from: data)
+                    
+                    DispatchQueue.main.async { [weak self] in
+                        self?.tableView.reloadData()
+                    }
+                } else {
+                    print("error")
+                }
+            }catch {
+                print(error)
+            }
+        })
+        dataTask.resume()
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
